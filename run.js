@@ -182,7 +182,7 @@ const main = async () => {
 
             // Menunggu dengan waktu yang terus berjalan tanpa mencetak ulang
             while (timeRemaining > 0) {
-                process.stdout.write(`${getTimestamp()} Waiting for ${timeRemaining.toFixed(1)} seconds before the next share... \r`);
+                process.stdout.write(`${getTimestamp()} Waiting for ${timeRemaining.toFixed(1)} seconds  \r`);
                 timeRemaining -= 0.1;
                 await delay(100);
             }
